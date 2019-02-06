@@ -13,6 +13,8 @@ import { VerifiedVenuesPage } from '../pages/verified-venues/verified-venues';
 import { ProfilePage } from '../pages/profile/profile';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { MessagesPage } from '../pages/messages/messages';
+import { RegisterPage } from '../pages/register/register';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MessagesPage } from '../pages/messages/messages';
     ProfilePage,
     NotificationsPage,
     TabsPage,
-    MessagesPage
+    MessagesPage,
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import { MessagesPage } from '../pages/messages/messages';
     ProfilePage,
     NotificationsPage,
     TabsPage,
-    MessagesPage
+    MessagesPage,
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,

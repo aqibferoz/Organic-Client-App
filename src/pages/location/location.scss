@@ -1,0 +1,35 @@
+page-location {
+    ion-segment{
+        // margin-left: 12px !important;
+        margin: auto !important;
+        background-color: white !important;
+        width: 350px !important;
+        color: #FFBD02 !important;
+        border-color:solid white !important;
+        text-align: center !important;
+        border-radius: 5px !important;
+    }
+    ion-header{
+        height: 95px !important;
+        background: #FFBD02 !important;
+    }
+
+    .segment-button{
+        color: white !important;
+        border-color: white !important;
+        background: #FFBD02 !important;
+    }
+    .segment-button.segment-activated{
+        background: white !important;
+        color: #FFBD02 !important;
+
+    }
+    .segment-button.segment-activated{
+        border-color: solid white !important;
+    }
+    
+    .searchbar-input{
+        border-radius: 6px !important;
+        height: 38px !important;
+    }
+}
