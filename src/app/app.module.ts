@@ -13,8 +13,8 @@ import { VerifiedVenuesPage } from '../pages/verified-venues/verified-venues';
 import { ProfilePage } from '../pages/profile/profile';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { MessagesPage } from '../pages/messages/messages';
-import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { LoginPage } from '../pages/login/login';
     TabsPage,
     MessagesPage,
     LoginPage,
-    RegisterPage
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +44,7 @@ import { LoginPage } from '../pages/login/login';
     TabsPage,
     MessagesPage,
     LoginPage,
-    RegisterPage
+    SignupPage
   ],
   providers: [
     StatusBar,

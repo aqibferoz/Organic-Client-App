@@ -41,6 +41,10 @@ ion-icon {
         mask-image: url(../assets/icon/bubble.svg);
         background:#ececec !important;
      }
+     &[class*="appname-facebook"] {
+        mask-image: url(../assets/icon/facebook.svg);
+        background:#ececec !important;
+     }
     }
 
 

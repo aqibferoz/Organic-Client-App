@@ -8,7 +8,7 @@ page-login {
     }
     .btn-login{
         background-color: transparent !important;
-        color: rgb(53, 41, 25) !important;
+        color: rgb(105, 82, 52) !important;
         font-size: 17px !important;
     }
     .btn-light{
@@ -17,6 +17,10 @@ page-login {
         font-size: 17px !important;
 
 
+    }
+    #fb{
+        font-size: 16px !important;
+        margin-right: 10px !important;
     }
     .btn-register{
         height: 50px !important;
@@ -29,7 +33,7 @@ page-login {
     }
     .btn-fb{
         background-color: #3b5998 !important;
-;
+        font-size: 13px !important;
     }
     .checkbox-icon{
         border-radius: 0px !important;

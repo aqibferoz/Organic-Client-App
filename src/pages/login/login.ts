@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { RegisterPage } from '../register/register';
 import { TabsPage } from '../tabs/tabs';
+import { SignupPage } from '../signup/signup';
 
 /**
  * Generated class for the LoginPage page.
@@ -48,7 +48,7 @@ export class LoginPage {
   //   prompt.present();
   // }
   register(){
-    this.navCtrl.push(RegisterPage)
+    this.navCtrl.push(SignupPage)
   }
 
   login(){
