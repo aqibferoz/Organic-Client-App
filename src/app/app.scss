@@ -23,3 +23,20 @@
 .toolbar-title{
     color: white !important;
 }
+ion-icon {
+    &[class*="appname-"] {
+        // Instead of using the font-based icons
+        // We're applying SVG masks
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: #d7a33a;
+        width: 1.2em;
+        height: 1.2em;
+    }
+     // custom icons
+     &[class*="appname-bubble"] {
+        mask-image: url(../assets/icon/bubble.svg);
+        background:#ececec !important;
+     }
+    }

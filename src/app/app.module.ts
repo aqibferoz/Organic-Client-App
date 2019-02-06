@@ -12,6 +12,7 @@ import { LocationPage } from '../pages/location/location';
 import { VerifiedVenuesPage } from '../pages/verified-venues/verified-venues';
 import { ProfilePage } from '../pages/profile/profile';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { MessagesPage } from '../pages/messages/messages';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     VerifiedVenuesPage,
     ProfilePage,
     NotificationsPage,
-    TabsPage
+    TabsPage,
+    MessagesPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     VerifiedVenuesPage,
     ProfilePage,
     NotificationsPage,
-    TabsPage
+    TabsPage,
+    MessagesPage
   ],
   providers: [
     StatusBar,
