@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { RegisterPage } from '../register/register';
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the LoginPage page.
@@ -15,11 +17,41 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  email;
+  password ;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl : AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
+  // forgotPassword(){
+  //   const prompt = this.alertCtrl.create({
+  //     title: 'Reset password',
+      
+  //     inputs: [
+  //       {
+  //         name: 'email',
+  //         placeholder: 'Email address'
+  //       },
+  //     ],
+  //     buttons: [
+  //       {
+  //         text: 'Send email',
+  //         handler: data => {
+  //           console.log('send clicked');
+  //         }
+  //       },
+       
+  //     ]
+  //   });
+  //   prompt.present();
+  // }
+  register(){
+    this.navCtrl.push(RegisterPage)
+  }
 
+  login(){
+    this.navCtrl.push(TabsPage)
+  }
 }

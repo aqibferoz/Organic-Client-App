@@ -1,3 +1,125 @@
 page-login {
+    .text-white{
+        color: white !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+    .scroll-content {
+        padding: 0px !important;
+    }
+    .btn-login{
+        background-color: transparent !important;
+        color: rgb(53, 41, 25) !important;
+        font-size: 17px !important;
+    }
+    .btn-light{
+        color: #FFBD02 !important;
+        background-color: transparent !important;
+        font-size: 17px !important;
 
+
+    }
+    .btn-register{
+        height: 50px !important;
+        background-color: #FFBD02 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center !important;
+        // bottom: 40px !important;
+
+    }
+    .btn-fb{
+        background-color: #3b5998 !important;
+;
+    }
+    .checkbox-icon{
+        border-radius: 0px !important;
+        margin-top: 5px !important;
+        margin-left: 60px !important;
+    }
+    .checkbox-label{
+        color: white !important;
+    }
+
+    .auth-page {
+        background-image: linear-gradient(135deg, #000000, #020005, #020005);
+        &::after {
+          content: "";
+          background: url("../../assets/imgs/3.jpg") no-repeat;
+          background-size: cover;
+          opacity: 0.1;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+          z-index: 0; 
+        }
+      
+        .grid {
+          padding: 0;
+          .col {
+            padding: 0;
+          }
+        }
+      
+        .btn-group {
+          .button-ios,
+          .button-md {
+            border-radius: 0;
+            &:first-of-type {
+              border-radius: 2px 0 0 2px;
+            }
+            &:last-of-type {
+              border-radius: 0 2px 2px 0;
+            }
+          }
+        }
+      
+        .scroll-content {
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          //background: rgba(50, 10, 92, .4);
+      
+          .login-content {
+            width: 80%;
+      
+            .logo {
+              width: 140px;
+              height: 140px;
+              margin: 20px auto 0;
+              border-radius: 10%;
+              background: url("./../../assets/imgs/login.png");
+              background-size: 100%;
+            }
+      
+            .list-form {
+              padding: 0;
+              margin-bottom: 0;
+      
+              ion-item {
+                background: none;
+                padding: 0;
+      
+                &:first-child {
+                  border-top: none;
+                }
+      
+                &:after {
+                  display: none;
+                }
+      
+                ion-label {
+                  font-size: 1em;
+                  color: color($colors, light);
+                }
+      
+                input {
+                  color: color($colors, light);
+                }
+              }
+            }
+          }
+        }
+      }
 }
