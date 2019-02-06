@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SettingsPage } from '../settings/settings';
+import { FriendsPage } from '../friends/friends';
 
 /**
  * Generated class for the ProfilePage page.
@@ -15,7 +17,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProfilePage {
 data = {
-  name : "Aqib Feroz"
+  'name' : "Aqib Feroz"
 }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -23,5 +25,10 @@ data = {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
   }
-
+  settings(){
+    this.navCtrl.push(SettingsPage)
+  }
+  friends(){
+    this.navCtrl.push(FriendsPage)
+  }
 }

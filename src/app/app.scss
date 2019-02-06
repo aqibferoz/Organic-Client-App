@@ -45,6 +45,14 @@ ion-icon {
         mask-image: url(../assets/icon/facebook.svg);
         background:#ececec !important;
      }
+     &[class*="appname-settings"] {
+        mask-image: url(../assets/icon/settings.svg);
+        background:#ececec !important;
+     }
+     &[class*="appname-friends"] {
+        mask-image: url(../assets/icon/friends.svg);
+        background:#ececec !important;
+     }
     }
     .back-button {
         color: white !important;

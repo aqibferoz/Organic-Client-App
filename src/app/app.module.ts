@@ -15,6 +15,8 @@ import { NotificationsPage } from '../pages/notifications/notifications';
 import { MessagesPage } from '../pages/messages/messages';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
+import { SettingsPage } from '../pages/settings/settings';
+import { FriendsPage } from '../pages/friends/friends';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SignupPage } from '../pages/signup/signup';
     TabsPage,
     MessagesPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    SettingsPage,
+    FriendsPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { SignupPage } from '../pages/signup/signup';
     TabsPage,
     MessagesPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    SettingsPage,
+    FriendsPage
   ],
   providers: [
     StatusBar,

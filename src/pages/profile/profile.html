@@ -7,7 +7,15 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-row>
+      <ion-col col-2 item-start>
+          <ion-icon name="appname-friends" id="friends" (click) = "friends()"></ion-icon>
+      </ion-col>
     <ion-title>{{data.name}}</ion-title>
+    <ion-col col-1 item-end item-right>
+    <ion-icon name="appname-settings" id="settings" (click) = "settings()"></ion-icon>
+  </ion-col>
+  </ion-row>
   </ion-navbar>
 
 </ion-header>
