@@ -1,0 +1,107 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-row>
+      <ion-title>Create Account</ion-title>
+     
+    </ion-row>
+    </ion-navbar>
+   
+  </ion-header>
+<!-- -->
+<ion-content padding class="animated fadeIn login auth-page">
+    <ion-row class="row-styling">
+        <ion-col col-12>
+          <!-- <ion-card padding> -->
+            <ion-avatar>
+              <img [src]="data.image" alt="">
+            </ion-avatar>
+           
+              <!-- </ion-card> -->
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-styling">
+        <ion-col col-4 class="row-styling">
+            <button class="image">ADD PHOTO</button>
+        </ion-col>
+      </ion-row>
+
+      
+
+    <div class="login-content">
+  
+   
+  
+      <!-- Login form -->
+      <form class="list-form">
+        <ion-item>
+          <ion-label floating>
+            Username
+          </ion-label>
+          <ion-input type="string" name="username" [(ngModel)]="username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>
+              Full Name
+            </ion-label>
+            <ion-input type="string" name="fullname" [(ngModel)]="fullname"></ion-input>
+          </ion-item>
+
+            <ion-item>
+                <ion-label floating>
+                  Email Address
+                </ion-label>
+                <ion-input type="email" name="email" [(ngModel)]="email"></ion-input>
+              </ion-item>
+
+              <ion-item>
+          <ion-label floating>
+            Password
+          </ion-label>
+          <ion-input type="password" name="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <p ion-text color="danger" class="text-1x has-error" *ngIf="passwordRequired">This field is required</p>
+
+        <ion-row>
+          <ion-col col-6>
+        <ion-item>
+            <ion-label>Gender</ion-label>
+            <ion-select>
+              <ion-option value="f">Female</ion-option>
+              <ion-option value="m">Male</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col col-6>
+          <ion-item>
+              <ion-label>Country</ion-label>
+              <ion-select>
+                <ion-option *ngFor="let item of countries" [value]="item">{{item}}</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-item color="accent">
+            <ion-label floating>Birthday</ion-label>
+            <ion-datetime displayFormat="MM/DD/YYYY" id="datetime" [(ngModel)]="date" name="date"></ion-datetime>
+          </ion-item>
+      </form>
+      
+      <ion-row>
+          <ion-col col-12>
+            <button ion-button icon-start block color="dark" class="btn-ca" tappable (click) = "toLogin()">
+              CREATE ACCOUNT
+            </button>
+          </ion-col>
+        </ion-row>
+  
+  
+      <!-- Other links -->
+      
+  
+    </div>
+  </ion-content>
+  
