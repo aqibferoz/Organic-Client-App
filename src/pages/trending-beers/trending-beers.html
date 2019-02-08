@@ -1,0 +1,78 @@
+<!--
+  Generated template for the TrendingBeersPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header style="background-color: #FFBD02 !important;">
+
+  <ion-navbar>
+    <ion-row>
+    <ion-title>Trending Beers</ion-title>
+    <ion-col col-1 item-end item-right>
+    <ion-icon name="appname-dots"></ion-icon>
+  </ion-col>
+  </ion-row>
+  
+  
+  </ion-navbar>
+  <ion-segment align-middle mode="ios" [(ngModel)]="requests">
+    <ion-segment-button value="local"> Local </ion-segment-button>
+
+    <ion-segment-button value="global"> Global </ion-segment-button>
+
+  </ion-segment>
+  <div>
+    <ion-searchbar placeholder = "City, state, or zip code" class="searchbar" [(ngModel)]="searchTerm"></ion-searchbar>
+  </div>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div [ngSwitch]="requests">
+      <ion-list *ngSwitchCase="'local'" no-lines>
+
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'global'" no-lines>
+
+            <ion-list *ngFor="let item of data">
+                <ion-item default-item no-lines>
+                  <!-- <ion-avatar item-start> -->
+                    <img item-start [src]="item.avatar"/>
+                  <!-- </ion-avatar> -->
+                  <h2 item-title><b>{{item.title}}</b></h2>
+                  <h3 item-subtitle text-wrap>{{item.subtitle}}</h3>
+                  <h3 item-subtitle text-wrap>{{item.subtitle}}</h3>
+                  <!-- <ion-col col-1 item-end item-right> -->
+                <ion-icon class="icon-btn" item-end name="appname-dots" style="color: black !important;"></ion-icon>
+                <!-- </ion-col> -->
+                <br>
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                 </fieldset>
+
+
+
+                 <!-- <ion-row>
+                 <h3 item-subtitle>{{item.number}}</h3>
+                 <h3 item-subtitle>{{item.text}}</h3>
+                </ion-row> -->
+                </ion-item>
+               
+                
+              </ion-list>
+
+        </ion-list>
+    </div>
+</ion-content>
