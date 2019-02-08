@@ -1,6 +1,6 @@
 page-verified-venues {
     ion-header{
-        height: 110px !important;
+        height: 105px !important;
         background: #FFBD02 !important;
     }
     .searchbar-input{
@@ -11,5 +11,45 @@ page-verified-venues {
         color: white !important;
         font-size: 25px !important;
         font-weight: bolder !important;
+    }
+    .toolbar .searchbar-ios .searchbar-input {
+        background: white !important;
+    }
+    .main-heading{
+        color: black !important;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        margin-top: 9px !important;
+        background-color: black !important;
+    }
+    .icon-arrow{
+        color: black !important;
+        font-size: 12px !important;
+        font-weight: 300 !important;
+        background-color: grey !important;
+    }
+    h4{
+        font-size: 17px !important;
+        font-weight: 400 !important;
+    }
+    h5{
+        margin-top: -0.8rem !important;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+    }
+    hr{
+        color: black !important;
+        // border-bottom: 1px solid black !important;    
+    }
+
+    .icon-trending{
+        color: black !important;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        background-color: black !important;
+    }
+    .row{
+        border-bottom: 0.2px solid rgb(212, 208, 208) !important;
+
     }
 }

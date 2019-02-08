@@ -10,7 +10,7 @@ page-location {
         border-radius: 5px !important;
     }
     ion-header{
-        height: 95px !important;
+        height: 105px !important;
         background: #FFBD02 !important;
     }
 
@@ -31,5 +31,12 @@ page-location {
     .searchbar-input{
         border-radius: 6px !important;
         height: 38px !important;
+    }
+
+    .toolbar .searchbar-ios .searchbar-input {
+        background: white !important;
+    }
+    .searchbar-ios .searchbar-search-icon {
+        top: 12px !important;
     }
 }

@@ -39,20 +39,28 @@ ion-icon {
      // custom icons
      &[class*="appname-bubble"] {
         mask-image: url(../assets/icon/bubble.svg);
-        background:#ececec !important;
+        background: white !important;
      }
      &[class*="appname-facebook"] {
         mask-image: url(../assets/icon/facebook.svg);
-        background:#ececec !important;
+        background: white !important;
      }
      &[class*="appname-settings"] {
         mask-image: url(../assets/icon/settings.svg);
-        background:#ececec !important;
+        background: white !important;
      }
      &[class*="appname-friends"] {
         mask-image: url(../assets/icon/friends.svg);
-        background:#ececec !important;
+        background: white !important;
      }
+     &[class*="appname-arrow"] {
+        mask-image: url(../assets/icon/arrow.svg);
+        background: white !important;
+     }
+     &[class*="appname-tick"] {
+      mask-image: url(../assets/icon/tick.svg);
+      background: white !important;
+   }
     }
     .back-button {
         color: white !important;

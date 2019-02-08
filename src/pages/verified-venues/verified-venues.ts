@@ -15,7 +15,11 @@ import { MessagesPage } from '../messages/messages';
   templateUrl: 'verified-venues.html',
 })
 export class VerifiedVenuesPage {
+data = {
+  'title' : "Nearby Venues",
+  'subtitle' : "Best places to find beer near you",
 
+}
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

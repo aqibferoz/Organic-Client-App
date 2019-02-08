@@ -6,12 +6,12 @@
 -->
 <ion-header>
 
-  <!-- <ion-navbar>
-    <ion-title>location</ion-title>
-  </ion-navbar> -->
-  <div>
-  <ion-searchbar placeholder = "City, state, or zip code" class="searchbar" [(ngModel)]="searchTerm"></ion-searchbar>
-</div>
+  <ion-navbar>
+    <div>
+      <ion-searchbar style="color: white !important;" placeholder = "City, state, or zip code" class="searchbar" [(ngModel)]="searchTerm"></ion-searchbar>
+    </div>
+  </ion-navbar>
+  
 
   <ion-segment align-middle mode="ios" [(ngModel)]="requests">
       <ion-segment-button value="venues"> Venues </ion-segment-button>
