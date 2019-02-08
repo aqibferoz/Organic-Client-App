@@ -61,6 +61,10 @@ ion-icon {
       mask-image: url(../assets/icon/tick.svg);
       background: white !important;
    }
+   &[class*="appname-dots"] {
+      mask-image: url(../assets/icon/dots.svg);
+      background: white !important;
+   }
     }
     .back-button {
         color: white !important;

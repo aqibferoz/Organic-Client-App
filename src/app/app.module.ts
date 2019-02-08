@@ -17,6 +17,7 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { SettingsPage } from '../pages/settings/settings';
 import { FriendsPage } from '../pages/friends/friends';
+import { TrendingBeersPage } from '../pages/trending-beers/trending-beers';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FriendsPage } from '../pages/friends/friends';
     LoginPage,
     SignupPage,
     SettingsPage,
-    FriendsPage
+    FriendsPage,
+    TrendingBeersPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { FriendsPage } from '../pages/friends/friends';
     LoginPage,
     SignupPage,
     SettingsPage,
-    FriendsPage
+    FriendsPage,
+    TrendingBeersPage
   ],
   providers: [
     StatusBar,
