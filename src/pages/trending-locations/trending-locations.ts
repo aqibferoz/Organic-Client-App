@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams, ActionSheetController  } from 'ion
   templateUrl: 'trending-locations.html',
 })
 export class TrendingLocationsPage {
+  hide: boolean = false;
   data = [
     {
       "id": 1,
@@ -72,38 +73,32 @@ export class TrendingLocationsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TrendingLocationsPage');
   }
-  async presentActionSheet() {
+  async presentActionSheet(item) {
     const actionSheet = await this.actionSheetController.create({
-      title: 'Albums',
+      title: item.title,
 
       buttons: [{
-        text: 'Delete',
+        text: 'Add to List',
         role: 'destructive',
-        icon: 'trash',
+        // icon: 'trash',
         handler: () => {
           console.log('Delete clicked');
         }
       }, {
-        text: 'Share',
-        icon: 'share',
+        text: 'Send to Friend',
+        // icon: 'share',
         handler: () => {
           console.log('Share clicked');
         }
       }, {
-        text: 'Play (open modal)',
-        icon: 'arrow-dropright-circle',
+        text: 'Details',
+        // icon: 'arrow-dropright-circle',
         handler: () => {
           console.log('Play clicked');
         }
-      }, {
-        text: 'Favorite',
-        icon: 'heart',
-        handler: () => {
-          console.log('Favorite clicked');
-        }
-      }, {
+      },{
         text: 'Cancel',
-        icon: 'close',
+        // icon: 'close',
         role: 'cancel',
         handler: () => {
           console.log('Cancel clicked');
@@ -112,5 +107,10 @@ export class TrendingLocationsPage {
     });
     await actionSheet.present();
   }
-
+onGlobal(){
+  this.hide = true;
+}
+onLocal(){
+  this.hide = false;
+}
 }

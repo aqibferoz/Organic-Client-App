@@ -1,6 +1,6 @@
 page-trending-locations {
     ion-header{
-        height: 145px !important;
+        height: 150px !important;
         background: #FFBD02 !important;
     }
    
@@ -84,5 +84,9 @@ page-trending-locations {
     }
     .list-ios {
      margin: 0px !important;
+}
+.label-locations {
+    font-size: 18px !important;
+    color: white !important;
 }
 }

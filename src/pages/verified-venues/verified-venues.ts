@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MessagesPage } from '../messages/messages';
 import { TrendingBeersPage } from '../trending-beers/trending-beers';
 import { TrendingLocationsPage } from '../trending-locations/trending-locations';
+import { TopRatedFoodPage } from '../top-rated-food/top-rated-food';
 
 /**
  * Generated class for the VerifiedVenuesPage page.
@@ -36,5 +37,8 @@ data = {
   }
   trendinglocations(){
     this.navCtrl.push(TrendingLocationsPage)
+  }
+  topratedBeers(){
+    this.navCtrl.push(TopRatedFoodPage)
   }
 }

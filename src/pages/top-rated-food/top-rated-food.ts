@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
 
 /**
  * Generated class for the TopRatedFoodPage page.
@@ -15,11 +15,102 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TopRatedFoodPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetController: ActionSheetController) {
   }
-
+  hide: boolean = false;
+  data = [
+    {
+      "id": 1,
+      "avatar": "assets/imgs/2.jpg",
+      "image": "assets/images/avatar/15.jpg",
+      "title": "Barrel Theory Beer Company",
+      "subtitle": "Stone Brewing",
+      "number": "4.31",
+      "button": "Categories",
+      "text": "Avg",
+  },
+  {
+    "id": 1,
+    "avatar": "assets/imgs/2.jpg",
+    "image": "assets/images/avatar/15.jpg",
+    "title": "Vengeful Spirit IPA",
+    "subtitle": "Stone Brewing",
+    "number": "4.31",
+    "button": "Categories",
+    "text": "Avg",
+},
+{
+  "id": 1,
+  "avatar": "assets/imgs/2.jpg",
+  "image": "assets/images/avatar/15.jpg",
+  "title": "Vengeful Spirit IPA",
+  "subtitle": "Stone Brewing",
+  "number": "4.31",
+  "button": "Categories",
+  "text": "Avg",
+},
+{
+  "id": 1,
+  "avatar": "assets/imgs/2.jpg",
+  "image": "assets/images/avatar/15.jpg",
+  "title": "Vengeful Spirit IPA",
+  "subtitle": "Stone Brewing",
+  "number": "4.31",
+  "button": "Categories",
+  "text": "Avg",
+},
+{
+  "id": 1,
+  "avatar": "assets/imgs/2.jpg",
+  "image": "assets/images/avatar/15.jpg",
+  "title": "Vengeful Spirit IPA",
+  "subtitle": "Stone Brewing",
+  "number": "4.31",
+  "button": "Categories",
+  "text": "Avg",
+},
+]
   ionViewDidLoad() {
     console.log('ionViewDidLoad TopRatedFoodPage');
   }
+  async presentActionSheet(item) {
+    const actionSheet = await this.actionSheetController.create({
+      title: item.title,
 
+      buttons: [{
+        text: 'Add to List',
+        role: 'destructive',
+        // icon: 'trash',
+        handler: () => {
+          console.log('Delete clicked');
+        }
+      }, {
+        text: 'Send to Friend',
+        // icon: 'share',
+        handler: () => {
+          console.log('Share clicked');
+        }
+      }, {
+        text: 'Details',
+        // icon: 'arrow-dropright-circle',
+        handler: () => {
+          console.log('Play clicked');
+        }
+      },{
+        text: 'Cancel',
+        // icon: 'close',
+        role: 'cancel',
+        handler: () => {
+          console.log('Cancel clicked');
+        }
+      }]
+    });
+    await actionSheet.present();
+  }
+onGlobal(){
+  this.hide = true;
+}
+onLocal(){
+  this.hide = false;
+}
 }

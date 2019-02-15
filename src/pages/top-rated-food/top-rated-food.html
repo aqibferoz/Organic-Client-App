@@ -7,12 +7,61 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>top-rated-food</ion-title>
+      <ion-row>
+          <ion-title>Top Rated Food</ion-title>
+          <ion-col col-1 item-end item-right>
+              <ion-icon name="appname-dots"  *ngIf="hide"></ion-icon>
+            </ion-col>
+          <ion-col col-3 item-end item-right>
+              <ion-label class="label-locations" *ngIf="!hide">Distance</ion-label>
+            </ion-col>
+          </ion-row>
   </ion-navbar>
-
+  <ion-segment align-middle mode="ios" [(ngModel)]="requests">
+      <ion-segment-button value="local" (click) = "onLocal()"> Local </ion-segment-button>
+  
+      <ion-segment-button value="global" (click) = "onGlobal()"> Global </ion-segment-button>
+  
+    </ion-segment>
+    <div>
+      <ion-searchbar placeholder = "City, state, or zip code" class="searchbar" [(ngModel)]="searchTerm"></ion-searchbar>
+    </div>
 </ion-header>
 
 
 <ion-content padding>
-
+    <div [ngSwitch]="requests">
+        <ion-list *ngSwitchCase="'local'" no-lines>
+  
+          </ion-list>
+  
+          <ion-list *ngSwitchCase="'global'" no-lines>
+  
+              <ion-list *ngFor="let item of data">
+                  <ion-item default-item no-lines>
+                    <!-- <ion-avatar item-start> -->
+                      <img item-start [src]="item.avatar"/>
+                    <!-- </ion-avatar> -->
+                    <h2 item-title><b>{{item.title}}</b></h2>
+                    <h3 item-subtitle text-wrap>{{item.subtitle}}</h3>
+                    <h3 item-subtitle text-wrap>{{item.subtitle}}</h3>
+                
+                    <!-- <ion-col col-1 item-end item-right> -->
+                  <ion-icon class="icon-btn" item-end name="appname-dots" (click) = "presentActionSheet(item)" style="color: black !important;"></ion-icon>
+                  <!-- </ion-col> -->
+                
+  
+  
+  
+                   <!-- <ion-row>
+                   <h3 item-subtitle>{{item.number}}</h3>
+                   <h3 item-subtitle>{{item.text}}</h3>
+                  </ion-row> -->
+                  </ion-item>
+                  <hr>
+                  
+                </ion-list>
+  
+          </ion-list>
+      </div>
 </ion-content>
