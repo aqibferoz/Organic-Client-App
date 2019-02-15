@@ -19,6 +19,8 @@ import { SettingsPage } from '../pages/settings/settings';
 import { FriendsPage } from '../pages/friends/friends';
 import { TrendingBeersPage } from '../pages/trending-beers/trending-beers';
 
+import { Geolocation } from '@ionic-native/geolocation';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -58,6 +60,7 @@ import { TrendingBeersPage } from '../pages/trending-beers/trending-beers';
   providers: [
     StatusBar,
     SplashScreen,
+    // Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
