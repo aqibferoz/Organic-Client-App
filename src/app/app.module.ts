@@ -20,6 +20,8 @@ import { FriendsPage } from '../pages/friends/friends';
 import { TrendingBeersPage } from '../pages/trending-beers/trending-beers';
 
 import { Geolocation } from '@ionic-native/geolocation';
+import { TrendingLocationsPage } from '../pages/trending-locations/trending-locations';
+import { TopRatedFoodPage } from '../pages/top-rated-food/top-rated-food';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { Geolocation } from '@ionic-native/geolocation';
     SignupPage,
     SettingsPage,
     FriendsPage,
-    TrendingBeersPage
+    TrendingBeersPage,
+    TrendingLocationsPage,
+    TopRatedFoodPage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,9 @@ import { Geolocation } from '@ionic-native/geolocation';
     SignupPage,
     SettingsPage,
     FriendsPage,
-    TrendingBeersPage
+    TrendingBeersPage,
+    TrendingLocationsPage,
+    TopRatedFoodPage
   ],
   providers: [
     StatusBar,

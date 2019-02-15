@@ -1,3 +1,88 @@
 page-trending-locations {
+    ion-header{
+        height: 145px !important;
+        background: #FFBD02 !important;
+    }
+   
+    .searchbar-input{
+        border-radius: 6px !important;
+        height: 38px !important;
+    }
+    ion-icon{
+        color: white !important;
+        font-size: 25px !important;
+        font-weight: bolder !important;
+    }
+    .toolbar .searchbar-ios .searchbar-input {
+        background: white !important;
+    }
+    .searchbar-ios{
+        background: #FFBD02 !important;
+        margin-top: 5px !important;
+    }
+    
 
+    .icon-trending{
+        color: black !important;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        background-color: black !important;
+    }
+    
+    .back-button.show-back-button {
+        display: none !important;
+    }
+    .icon{
+        font-size: 22px !important;
+    }
+    ion-segment{
+        // margin-left: 12px !important;
+        margin: auto !important;
+        background-color: white !important;
+        width: 350px !important;
+        color: #FFBD02 !important;
+        border-color:solid white !important;
+        text-align: center !important;
+        border-radius: 5px !important;
+    }
+    
+
+    .segment-button{
+        color: white !important;
+        border-color: white !important;
+        background: #FFBD02 !important;
+    }
+    .segment-button.segment-activated{
+        background: white !important;
+        color: #FFBD02 !important;
+
+    }
+    .segment-button.segment-activated{
+        border-color: solid white !important;
+    }
+    img{
+        border-radius: 0px !important;
+        height: 50px !important;
+        width: 50px !important;
+        margin-bottom: 35px !important;
+    }
+    .item-md{
+        padding-left: 0px !important;
+    }
+    .item-ios{
+        padding-left: 0px !important;
+    }
+    .icon-btn{
+        background-color: black !important;
+        font-size: 15px !important;
+    }
+    .ion-md-appname-dots{
+        margin-top: -40px !important;
+    }
+    .list-md {
+        margin: -10px 0 16px;
+    }
+    .list-ios {
+     margin: 0px !important;
+}
 }

@@ -82,7 +82,24 @@ page-trending-beers {
         background-color: black !important;
         font-size: 15px !important;
     }
-    .ion-md-appname-dots{
+    .ion-md-appname-dots .item-ios .icon-btn .icon .icon-ios .icon-ios .item-icon{
         margin-top: -40px !important;
     }
+    .item-ios ion-icon[item-left], .item-ios ion-icon[item-right], .item-ios ion-icon[item-start], .item-ios ion-icon[item-end] {
+        margin-left: 0;
+        margin-top: -44px;
+        margin-bottom: 8px;
+    }
+    .item-md ion-icon[item-left], .item-md ion-icon[item-right], .item-md ion-icon[item-start], .item-md ion-icon[item-end] {
+        margin-left: 0;
+        margin-top: -44px;
+        margin-bottom: 8px;
+    }
+    .list-md {
+        margin: -10px 0 16px !important;
+    }
+   
+    .list-ios {
+     margin: 0px !important;
+}
 }
