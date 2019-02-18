@@ -10,14 +10,14 @@
     <ion-row>
     <ion-title>Trending Beers</ion-title>
     <ion-col col-1 item-end item-right>
-    <ion-icon name="appname-dots"  *ngIf="!hide"></ion-icon>
+    <ion-icon name="appname-dots" *ngIf="!hide"></ion-icon>
   </ion-col>
   </ion-row>
   
   
   </ion-navbar>
   <ion-segment align-middle mode="ios" [(ngModel)]="requests">
-    <ion-segment-button value="local"> Local </ion-segment-button>
+    <ion-segment-button value="local"(click) = "onLocal()"> Local </ion-segment-button>
 
     <ion-segment-button value="global" (click) = "onGlobal()"> Global </ion-segment-button>
 

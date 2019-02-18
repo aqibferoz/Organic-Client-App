@@ -28,6 +28,8 @@
     "cordova-plugin-geolocation": "4.0.1",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
+    "ngx-input-star-rating": "0.0.3",
+    "react-star-ratings": "^2.3.0",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.29"

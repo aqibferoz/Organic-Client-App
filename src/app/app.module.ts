@@ -20,6 +20,8 @@ import { FriendsPage } from '../pages/friends/friends';
 import { TrendingBeersPage } from '../pages/trending-beers/trending-beers';
 
 import { Geolocation } from '@ionic-native/geolocation';
+import { NgxInputStarRatingModule } from 'ngx-input-star-rating';
+
 import { TrendingLocationsPage } from '../pages/trending-locations/trending-locations';
 import { TopRatedFoodPage } from '../pages/top-rated-food/top-rated-food';
 
@@ -43,6 +45,7 @@ import { TopRatedFoodPage } from '../pages/top-rated-food/top-rated-food';
   ],
   imports: [
     BrowserModule,
+    NgxInputStarRatingModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

@@ -122,4 +122,7 @@ export class TrendingBeersPage {
   onGlobal(){
     this.hide=true;
   }
+  onLocal(){
+    this.hide = false;
+  }
 }

@@ -7,9 +7,9 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-row>
+    <ion-row class="row-style">
     <ion-title>Locations</ion-title>
-    <ion-col col-3 item-end item-right>
+    <ion-col item-end item-right>
         <ion-label class="label-locations" *ngIf="!hide">Distance</ion-label>
       </ion-col>
     </ion-row>
@@ -28,7 +28,7 @@
 
 <ion-content padding>
     <div [ngSwitch]="requests">
-        <ion-list *ngSwitchCase="'local'" no-lines>
+        <ion-list *ngSwitchCase="'local'" no-lines ngSelected="selected">
   
           </ion-list>
   

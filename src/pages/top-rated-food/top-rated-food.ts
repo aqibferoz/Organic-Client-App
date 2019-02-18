@@ -27,7 +27,8 @@ export class TopRatedFoodPage {
       "subtitle": "Stone Brewing",
       "number": "4.31",
       "button": "Categories",
-      "text": "Avg",
+      "avg": "4.74",
+      "ratings": "13,742"
   },
   {
     "id": 1,
@@ -78,7 +79,7 @@ export class TopRatedFoodPage {
       title: item.title,
 
       buttons: [{
-        text: 'Add to List',
+        text: 'Check-In',
         role: 'destructive',
         // icon: 'trash',
         handler: () => {
@@ -91,7 +92,20 @@ export class TopRatedFoodPage {
           console.log('Share clicked');
         }
       }, {
-        text: 'Details',
+        text: 'Find It',
+        // icon: 'arrow-dropright-circle',
+        handler: () => {
+          console.log('Play clicked');
+        }
+      }, {
+        text: 'Add to List',
+        // icon: 'arrow-dropright-circle',
+        handler: () => {
+          console.log('Play clicked');
+        }
+      },
+      {
+        text: 'View Beer Details',
         // icon: 'arrow-dropright-circle',
         handler: () => {
           console.log('Play clicked');

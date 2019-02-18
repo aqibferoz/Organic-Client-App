@@ -30,7 +30,7 @@ page-trending-locations {
     }
     
     .back-button.show-back-button {
-        display: none !important;
+        display: initial !important;
     }
     .icon{
         font-size: 22px !important;
@@ -64,7 +64,7 @@ page-trending-locations {
         border-radius: 0px !important;
         height: 50px !important;
         width: 50px !important;
-        margin-bottom: 35px !important;
+        margin-bottom: 15px !important;
     }
     .item-md{
         padding-left: 0px !important;
@@ -88,5 +88,9 @@ page-trending-locations {
 .label-locations {
     font-size: 18px !important;
     color: white !important;
+    float : right !important;
+}
+.row-style{
+    // height: 40px !important;
 }
 }
